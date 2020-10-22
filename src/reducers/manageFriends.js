@@ -11,7 +11,7 @@ export function manageFriends(state = {friends: []}, action){
             }
         )
         case "REMOVE_FRIEND":
-            let foundIndex = state.friends.find(friend => friend.id === action.id)
+            let foundIndex = state.friends.findIndex(friend => friend.id === action.id)
             return (
                 {
                     ...state,
