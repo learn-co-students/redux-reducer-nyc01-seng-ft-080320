@@ -9,7 +9,7 @@
 3. Write a reducer that takes an action(payload).
 
 ## Overview
-
+ 
 Each year, around the holidays especially, we forget who we need to buy presents
 for. Let's write a function that will help us manage our gift recipient list. We
 should be able to add a person we need to buy a present for and remove people we
