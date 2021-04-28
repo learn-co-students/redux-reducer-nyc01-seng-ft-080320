@@ -31,9 +31,9 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
    would look something like this:
 
     ```js
-      action = {
-        type: "INCREASE"
-      }
+    action = {
+      type: "INCREASE"
+    }
     ```
 
    If the reducer receives a `type` set to `"INCREASE"`, return a new state
@@ -49,14 +49,14 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
    `friend` key assigned to an object with `name`, `hometown`, and `id` keys.
 
     ```js
-      action = {
-        type: "ADD_FRIEND",
-        friend: {
-          name: "Chrome Boi",
-          hometown: "NYC",
-          id: 1
-        }
+    action = {
+      type: "ADD_FRIEND",
+      friend: {
+        name: "Chrome Boi",
+        hometown: "NYC",
+        id: 1
       }
+    }
     ```
 
    When our reducer receives `"ADD_FRIEND"`, it should return a new state with
@@ -68,10 +68,10 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
    that includes everyone _except_ the removed friend.
 
     ```js
-      action = {
-        type: "REMOVE_FRIEND",
-        id: 1
-      }
+    action = {
+      type: "REMOVE_FRIEND",
+      id: 1
+    }
     ```
 
 Both reducers should be pure functions.  This means that the functions cannot
