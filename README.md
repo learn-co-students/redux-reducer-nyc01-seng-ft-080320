@@ -30,11 +30,11 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
    Actions passed into this reducer will only have a _type_ attribute, so they
    would look something like this:
 
-      ```js
-        action = {
-          type: "INCREASE"
-        }
-      ```
+    ```js
+      action = {
+        type: "INCREASE"
+      }
+    ```
 
    If the reducer receives a `type` set to `"INCREASE"`, return a new state
    where the value of `numberOfPresents` is increased by one. Use the tests to
@@ -48,16 +48,16 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
    and `"REMOVE_FRIEND"`. When adding a friend, the action will include a
    `friend` key assigned to an object with `name`, `hometown`, and `id` keys.
 
-    ```js
-      action = {
-        type: "ADD_FRIEND",
-        friend: {
-          name: "Chrome Boi",
-          hometown: "NYC",
-          id: 1
-        }
+  ```js
+    action = {
+      type: "ADD_FRIEND",
+      friend: {
+        name: "Chrome Boi",
+        hometown: "NYC",
+        id: 1
       }
-    ```
+    }
+  ```
 
    When our reducer receives `"ADD_FRIEND"`, it should return a new state with
    this friend object added to the `friends` array.
@@ -67,12 +67,12 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
    in another way, the reducer is really returning a new state with an array of `friends`
    that includes everyone _except_ the removed friend.
 
-    ```js
-      action = {
-        type: "REMOVE_FRIEND",
-        id: 1
-      }
-    ```
+  ```js
+    action = {
+      type: "REMOVE_FRIEND",
+      id: 1
+    }
+  ```
 
 Both reducers should be pure functions.  This means that the functions cannot
 change any object defined outside of the functions.  It also means that given an
