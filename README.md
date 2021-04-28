@@ -52,7 +52,7 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
       action = {
         type: "ADD_FRIEND",
         friend: {
-          name: "Chrome Boi"
+          name: "Chrome Boi",
           hometown: "NYC",
           id: 1
         }
