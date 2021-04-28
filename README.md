@@ -23,7 +23,7 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
 ## Instructions
 
 1. In `managePresents.js`, write a function called `managePresents()` that takes
-   in the previous state and an action as its argument. Set an default value for
+   in the previous state and an action as its argument. Set a default value for
    the state argument - an object with a key, `numberOfPresents`, assigned to
    `0`.
 
@@ -53,7 +53,7 @@ code in `src/reducers/manageFriends.js` and `src/reducers/managePresents.js`.
         type: "ADD_FRIEND",
         friend: {
           name: "Chrome Boi"
-          homewtown: "NYC",
+          hometown: "NYC",
           id: 1
         }
       }
@@ -109,7 +109,7 @@ difficult to read given its rather verbose syntax.
 
 An alternative approach is to use the object spread syntax, which lets you use
 the spread (...) operator to copy enumerable properties from one object to
-another in a more succinct way
+another in a more succinct way:
 
 ```javascript
 let dog = {id: 1, name: 'scooby', color: 'brown', age: 4};
