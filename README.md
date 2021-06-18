@@ -102,8 +102,6 @@ property with a new value."
 
 ## A Note on the Object Spread Operator
 
-![future](https://media.giphy.com/media/l0CRCmMBYQbL7dCmI/giphy.gif)
-
 While effective, using `Object.assign()` can quickly make simple reducers
 difficult to read given its rather verbose syntax.
 
